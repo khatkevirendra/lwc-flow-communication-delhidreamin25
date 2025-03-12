@@ -1,0 +1,14 @@
+<template>
+    <p>{title}</p>
+    <lightning-card>
+    <!--Lightning Datatable Start-->
+    <lightning-datatable data={records} columns={fieldColumns} key-field="id" max-row-selection="1">
+
+    </lightning-datatable>
+    <!--Lightning Datatable End-->
+
+    <lightning-button variant="Neutral" label="Create Task" title="Create Task" onclick={handleClick} 
+        class="slds-m-left_x-small"></lightning-button>
+
+    </lightning-card>
+</template>
